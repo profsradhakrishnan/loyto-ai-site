@@ -94,24 +94,6 @@
       gap: 0.75rem;
     }
 
-    .logo-mark {
-      width: 40px;
-      height: 40px;
-      border-radius: 999px;
-      background: radial-gradient(circle at 25% 25%, var(--accent-soft), var(--accent-grad-start));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 0 26px rgba(34, 166, 255, 0.9);
-      overflow: hidden;
-    }
-
-    .logo-mark img {
-      width: 120%;
-      height: 120%;
-      object-fit: contain;
-    }
-
     .nav-title {
       display: flex;
       flex-direction: column;
@@ -170,7 +152,7 @@
       gap: 0.75rem;
     }
 
-.brand-logo {
+.logo-mark {
   width: 40px;
   height: 40px;
   border-radius: 999px;
@@ -179,12 +161,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 26px rgba(34, 166, 255, 0.7);
 }
 
-.brand-logo svg {
+.logo-mark svg {
   width: 72%;
   height: 72%;
 }
+
 
     .btn {
       display: inline-flex;
@@ -841,25 +825,25 @@
       <div class="container">
         <div class="nav" id="nav">
           <div class="nav-left">
-            <div class="brand-logo" aria-hidden="true">
-              <svg viewBox="0 0 40 40">
-                <!-- nodes -->
-                <circle cx="10" cy="28" r="3" fill="#4ae5ff" />
-                <circle cx="28" cy="26" r="3" fill="#4ae5ff" />
-                <circle cx="22" cy="11" r="3" fill="#4ae5ff" />
-                <circle cx="14" cy="17" r="3" fill="#4ae5ff" />
-                <!-- edges -->
-                <line x1="10" y1="28" x2="14" y2="17" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" />
-                <line x1="14" y1="17" x2="22" y2="11" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" />
-                <line x1="14" y1="17" x2="28" y2="26" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" />
-                <line x1="22" y1="11" x2="28" y2="26" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" />
-             </svg>
-            </div>
-            <div class="nav-title">
-              <span>Loyto.ai</span>
-              <span>Intelligence That Compounds</span>
-            </div>
-          </div>
+  <div class="logo-mark" aria-hidden="true">
+    <svg viewBox="0 0 40 40">
+      <!-- nodes -->
+      <circle cx="10" cy="28" r="3" fill="#4ae5ff" />
+      <circle cx="28" cy="26" r="3" fill="#4ae5ff" />
+      <circle cx="22" cy="11" r="3" fill="#4ae5ff" />
+      <circle cx="14" cy="17" r="3" fill="#4ae5ff" />
+      <!-- edges -->
+      <line x1="10" y1="28" x2="14" y2="17" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" />
+      <line x1="14" y1="17" x2="22" y2="11" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" />
+      <line x1="14" y1="17" x2="28" y2="26" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" />
+      <line x1="22" y1="11" x2="28" y2="26" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" />
+    </svg>
+  </div>
+  <div class="nav-title">
+    <span>Loyto.ai</span>
+    <span>Intelligence That Compounds</span>
+  </div>
+</div>
           <nav class="nav-links">
             <a href="#platform">Platform</a>
             <a href="#market">Market</a>
@@ -1264,4 +1248,5 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
